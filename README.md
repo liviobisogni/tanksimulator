@@ -39,7 +39,7 @@ To compile the project from scratch:
 
 ## How to execute
 
-The compilation produces the executable file `TanksProject-master/main`. The program should be run as superuser (i.e., root user), e.g.,
+The compilation produces the executable file `tanksimulator/main`. The program should be run as superuser (i.e., root user), e.g.,
 
 ```
 $ sudo ./main
