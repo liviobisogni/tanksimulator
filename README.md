@@ -58,7 +58,7 @@ This figure shows the tasks-resources diagram:
 
 ![](img/Tasks-resources_diagram.png)
 
-You can find more about this project on the attached [pdf](PDFABCD.DEF). Yeah, that's available in Italian only, though (sorry folks).
+You can find more about this project on the attached [pdf](https://github.com/kimjong0xff/tanksimulator/blob/main/project-report.pdf). Yeah, that's available in Italian only, though (sorry folks).
 
 Finally, here are some screenshots of the GUI:
 
