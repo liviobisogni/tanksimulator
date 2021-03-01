@@ -29,12 +29,12 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
     	```
 * To compile the project again:
 
-	1. Navigate to `tanksimulator-main/`.
-	2. Type:
+1. Navigate to `tanksimulator-main/`.
+2. Type:
 
-    	```
-    	$ make
-    	```
+```
+$ make
+```
     
 * To compile the project from scratch:
 
