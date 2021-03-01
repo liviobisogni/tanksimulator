@@ -13,33 +13,42 @@ Is that water?
 $ sudo apt update
 $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 ```
-* [MyPtask](https://github.com/kimjong0xff/myptask-master) - An educational real-time library.
+* [MyPtask](https://github.com/kimjong0xff/myptask) - An educational real-time library.
 
 ## How to compile
 
-To compile the project:
+* To compile the project the first time:
 
-1. Move the `tanksimulator` folder (from now on referred to as `tanksimulator/`) where thou prefer.
-2. Launch a terminal window and navigate to `tanksimulator/`.
-3. Type:
+	1. Move the `tanksimulator-main` folder (from now on referred to as `tanksimulator-main/`) where thou prefer.
+	2. Launch a terminal window and navigate to `tanksimulator-main/`.
+	3. Create the `obj` folder and move it in `tanksimulator-main/`, i.e., `tanksimulator-main/obj/`.
+	4. Type:
 
-    ```
-    $ make
-    ```
+    	```
+    	$ make
+    	```
+* To compile the project again:
 
-To compile the project from scratch:
+	1. Navigate to `tanksimulator-main/`.
+	2. Type:
 
-1. Navigate to `TanksProject-master/`.
-2. Type:
+    	```
+    	$ make
+    	```
+    
+* To compile the project from scratch:
 
-    ```
-    $ make clean
-    $ make
-    ```
+	1. Navigate to `tanksimulator-main/`.
+	2. Type:
+
+    	```
+    	$ make clean
+    	$ make
+    	```
 
 ## How to execute
 
-The compilation produces the executable file `tanksimulator/main`. The program should be run as superuser (i.e., root user), e.g.,
+The compilation produces the executable file `tanksimulator-main/main`. The program should be run as superuser (i.e., root user), e.g.,
 
 ```
 $ sudo ./main
