@@ -27,16 +27,16 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
     	```
     	$ make
     	```
-	___
+
 * To compile the project again:
 
-1. Navigate to `tanksimulator-main/`.
-2. Type:
+	1. Navigate to `tanksimulator-main/`.
+	2. Type:
 
-```
-$ make
-```
-    ___
+    	```
+    	$ make
+    	```
+
 * To compile the project from scratch:
 
 	1. Navigate to `tanksimulator-main/`.
@@ -56,7 +56,7 @@ $ sudo ./main
 $ # Type your super secret password
 ```
 
-## No, that's _magic_ water!
+## Nope, that's _magic_ water!
 Let N, N = 5, be the number of tanks. Hence, there are n = 2 * (N + 1) = 12 periodic tasks:
 
 * &tau;<sub>T,1</sub>, ..., &tau;<sub>T,N</sub> tank tasks;
