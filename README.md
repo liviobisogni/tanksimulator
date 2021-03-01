@@ -21,7 +21,7 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 
 	1. Move the `tanksimulator-main` folder (from now on referred to as `tanksimulator-main/`) where thou prefer.
 	2. Launch a terminal window and navigate to `tanksimulator-main/`.
-	3. Create the `obj` folder and move it in `tanksimulator-main/`, i.e., `tanksimulator-main/obj/`.
+	3. Create the `obj` folder and move it inside `tanksimulator-main/`, i.e., `tanksimulator-main/obj/`.
 	4. Type:
 
     	```
