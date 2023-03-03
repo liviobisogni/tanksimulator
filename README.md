@@ -9,10 +9,10 @@ Is that water?
 
 * [Allegro 4](https://liballeg.org/stabledocs/en/index.html) - A cross-platform, open-source graphics library for game and multimedia programming. To install Allegro 4.4 under Ubuntu (or derivatives thereof), execute these commands from the terminal:
 
-```
-$ sudo apt update
-$ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
-```
+	```bash
+	sudo apt update
+	sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
+	```
 * [MyPtask](https://github.com/kimjong0xff/myptask) - An educational real-time library.
 
 ## How to compile
@@ -24,8 +24,8 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 	3. Create the `obj` folder and move it inside `tanksimulator-main/`, i.e., `tanksimulator-main/obj/`.
 	4. Type:
 
-    	```
-    	$ make
+    	```bash
+    	make
     	```
 
 * To compile the project again:
@@ -33,8 +33,8 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 	1. Navigate to `tanksimulator-main/`.
 	2. Type:
 
-    	```
-    	$ make
+    	```bash
+    	make
     	```
 
 * To compile the project from scratch:
@@ -42,18 +42,18 @@ $ sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 	1. Navigate to `tanksimulator-main/`.
 	2. Type:
 
-    	```
-    	$ make clean
-    	$ make
+    	```bash
+    	make clean
+    	make
     	```
 
 ## How to execute
 
 The compilation produces the executable file `tanksimulator-main/main`. The program should be run as superuser (i.e., root user), e.g.,
 
-```
-$ sudo ./main
-$ # Type your super secret password
+```bash
+sudo ./main
+# Type your super secret password
 ```
 
 ## Nope, that's _magic_ water!
@@ -68,7 +68,7 @@ This figure shows the tasks-resources diagram:
 
 ![](img/Tasks-resources_diagram.png)
 
-You can find more about this project on the attached [pdf](https://github.com/kimjong0xff/tanksimulator/blob/main/project-report.pdf). Yeah, that's available in Italian only, though (sorry folks).
+You can find more about this project on the attached [pdf](https://github.com/vbisog/tanksimulator/blob/main/project-report.pdf). Yeah, that's available in Italian only, though (sorry folks).
 
 Finally, here are some screenshots of the GUI:
 
