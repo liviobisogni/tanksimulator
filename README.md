@@ -75,7 +75,7 @@ Finally, here are some screenshots of the GUI:
 ![](img/t.png)
 
 <p align="center" width="100%">
-    <img width="61.8%" src="img/t2.png"> 
+    <img width="75%" src="img/t2.png"> 
 </p>
 
 <p align="center" width="100%">
