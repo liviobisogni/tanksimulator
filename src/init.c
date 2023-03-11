@@ -1,9 +1,8 @@
 //*****************************************************************************
 //******** INIT.C - Define global variables, initialize the simulator *********
 //********          and manage real-time (using functions defined in  *********
-//********          'myptasklibrary.a')                               *********
+//********          'libeasypthread.a') *********
 //********                    Author: Livio Bisogni                   *********
-//********                © 2021 REAL-TIME INDUSTRY Inc.              *********
 //*****************************************************************************
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -19,7 +18,7 @@ _____________________________________________________________________________*/
 #include <stdio.h>
 #include <time.h>
 #include "graphics.h"
-#include "myptask.h"
+#include "easy_pthread_task.h"
 #include "tank.h"
 
 
@@ -181,7 +180,7 @@ void print_dm_rt(int j, char s[])
 {
     int            dm;
     double         rt_avg, rt_max, rt_min, rt_tot, rt_std, util_avg;
-    double *       rt_values;
+    double        *rt_values;
     unsigned long *rt_indexes;
     unsigned long  m;
 

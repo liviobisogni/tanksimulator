@@ -2,7 +2,6 @@
 #**********        .CLANG-FORMAT - Clang Format Style Options        **********
 #********** https://clang.llvm.org/docs/ClangFormatStyleOptions.html **********
 #**********                   Author: Livio Bisogni                  **********
-#**********               © 2021 REAL-TIME INDUSTRY Inc.             **********
 #******************************************************************************
 
 #Standard: Cpp11

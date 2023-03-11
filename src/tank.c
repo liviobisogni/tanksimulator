@@ -2,7 +2,6 @@
 //**************** TANK.C - Compute tanks real water level and  ***************
 //****************          control their inlet valve positions ***************
 //****************            Author: Livio Bisogni             ***************
-//****************        © 2021 REAL-TIME INDUSTRY Inc.        ***************
 //*****************************************************************************
 
 /*‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾
@@ -17,8 +16,8 @@ _____________________________________________________________________________*/
 #include <stdio.h>
 #include <stdlib.h>
 #include "init.h"
-#include "myptask.h"
-#include "myptime.h"
+#include "easy_pthread_task.h"
+#include "easy_pthread_time.h"
 #include "user.h"
 
 

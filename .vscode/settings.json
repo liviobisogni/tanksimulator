@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "easy_pthread_task.h": "c",
+        "math.h": "c",
+        "tank.h": "c",
+        "init.h": "c"
+    }
+}
