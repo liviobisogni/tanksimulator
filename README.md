@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img width="61.8%" src="img/logo.png"> 
+    <img width="75%" src="img/logo.png"> 
 </p>
 
 <p align="center">
@@ -13,7 +13,7 @@
 	<span> • </span>
 	<a href="doc/report.pdf">Documentation</a>
 	<span> • </span> 
-	<a href="#gui">Screenshots</a>
+	<a href="#gui-screenshots">GUI Screenshots</a>
 	<span> • </span>
 	<a href="demo/demo.mp4">Demo</a>
 </p>
@@ -21,6 +21,9 @@
 <p align="center" width="100%">
     <img width="100%" src="demo/demo.gif"> 
 </p>
+
+## Description
+Tanks Simulator is a liquid tank control system game that features a graphical user interface and a set of tasks for tank, sensor, user input, and graphics management. Built using Allegro 4 graphics library and EasyPThread library for real-time tasks.
 
 ## <a id="prerequisites"></a>Prerequisites
 
@@ -30,9 +33,9 @@
 	sudo apt update
 	sudo apt install liballegro4.4 liballegro4-dev allegro4-doc
 	```
-* [EasyPThread](https://github.com/vbisog/lib-easypthread) - An educational real-time C library.
+* [EasyPThread](https://github.com/liviobisogni/lib-easypthread) - An educational real-time C library.
 
-## <a id="compile"></a>How to compile
+## <a id="compile"></a>How to Compile
 
 * To compile the project the first time:
 
@@ -64,64 +67,14 @@
     	make
     	```
 
-## <a id="execute"></a>How to execute
+## <a id="execute"></a>How to Execute
 
 The compilation produces the executable file `tanksimulator-main/main`. The program should be run as superuser (i.e., root user), e.g.,
 
 ```bash
 sudo ./main
-# Type your super secret password
+# Enter your user account password when prompted
 ```
-
-## Tasks
-
-The system has N liquid tanks, where N is equal to 5. There are a total of 12 periodic tasks, 2 for each tank plus 2 additional tasks:
-
-* τ<sub>T,1</sub>, ..., τ<sub>T,N</sub>: tasks responsible for tank management
-* τ<sub>S,1</sub>, ..., τ<sub>S,N</sub>: tasks responsible for sensor management
-* τ<sub>U</sub>: task responsible for user input management
-* τ<sub>G</sub>: task responsible for graphics management
-
-The following diagram illustrates the relationship between tasks and resources:
-
-![](img/task-resource-diagram.png)
-
-
-## <a id="gui"></a>GUI:
-
-The GUI of the liquid tank control system is designed to provide an intuitive user interface. Here are some of its features:
-
-#### Overview
-
-Liquid tanks with their inlet and outlet valves and randomizer button:
-
-<p align="center">
-    <img width="80%" src="img/tanks.png"> 
-</p>
-
-#### Keyboard commands
-A set of keyboard commands is available to control the system. More detailed instructions are in the [next section](#commands).
-
-<p align="center">
-    <img width="50%" src="img/commands.png"> 
-</p>
-
-#### Parameter ranges and values
-The GUI displays the range and current value of each adjustable parameter of the control system.
-
-<p align="center">
-    <img width="50%" src="img/parameters.png"> 
-</p>
-
-#### Tasks analyzer
-The GUI includes a task analyzer that displays task Deadline Misses and Response Times (instantaneous, red bar, average, blue bar, and maximum, red rightest thin line, respectively). It is powered by the [EasyPThread](https://github.com/vbisog/lib-easypthread) library.
-
-<p align="center">
-    <img width="50%" src="img/task-analyzer.png"> 
-</p>
-
-
-
 
 ## <a id="commands"></a>Commands
 
@@ -133,7 +86,7 @@ The following table lists the mouse commands available in the system:
 | --- | --- |
 | Click on a tank | Sets the desired liquid level (indicated by a red horizontal bar) |
 | Left-click and drag on an outlet valve | Adjusts the valve opening to control the flow rate of the liquid |
-| Click the r@andomizer button | Randomizes all the system parameters and tank colors |
+| Click the _r@andomize!_ button | Randomizes all the system parameters and tank colors |
 
 ### <a id="keyboard-commands"></a>Keyboard Commands
 
@@ -153,3 +106,48 @@ The following table lists the keyboard commands available in the system:
 | U<br>u	| Increases utilization scale by 1 <br> Decreases utilization scale by 1 | [0.5, 20] | - |
 | SPACE | Restores default values |
 | ESC | Exits the program |
+
+
+## Tasks
+
+The system has N liquid tanks, where N is equal to 5. There are a total of 12 periodic tasks, 2 for each tank plus 2 additional tasks:
+
+* τ<sub>T,1</sub>, ..., τ<sub>T,N</sub>: tasks responsible for tank management
+* τ<sub>S,1</sub>, ..., τ<sub>S,N</sub>: tasks responsible for sensor management
+* τ<sub>U</sub>: task responsible for user input management
+* τ<sub>G</sub>: task responsible for graphics management
+
+The following diagram illustrates the relationship between tasks and resources:
+
+![](img/task-resource-diagram.png)
+
+## <a id="gui-screenshots"></a>GUI
+
+#### Overview
+
+Liquid tanks with their inlet and outlet valves and randomizer button:
+
+<p align="center">
+    <img width="80%" src="img/tanks.png"> 
+</p>
+
+#### Keyboard Commands
+A set of keyboard commands is available to control the system. More detailed instructions are in the [next section](#commands).
+
+<p align="center">
+    <img width="50%" src="img/commands.png"> 
+</p>
+
+#### Parameter Ranges and Values
+The GUI displays the range and current value of each adjustable parameter of the control system.
+
+<p align="center">
+    <img width="50%" src="img/parameters.png"> 
+</p>
+
+#### Tasks Analyzer
+The GUI includes a task analyzer that displays task Deadline Misses and Response Times (instantaneous, red bar, average, blue bar, and maximum, red rightest thin line, respectively). It is powered by the [EasyPThread](https://github.com/liviobisogni/lib-easypthread) library.
+
+<p align="center">
+    <img width="50%" src="img/task-analyzer.png"> 
+</p>
